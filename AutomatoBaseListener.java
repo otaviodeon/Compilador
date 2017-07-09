@@ -130,6 +130,18 @@ public class AutomatoBaseListener implements AutomatoListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFinais(AutomatoParser.FinaisContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEntrada(AutomatoParser.EntradaContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEntrada(AutomatoParser.EntradaContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

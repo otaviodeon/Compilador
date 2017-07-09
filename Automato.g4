@@ -1,6 +1,6 @@
 grammar Automato;
 
-definicao: listaestados '\n' alfabeto '\n' transicao '\n' inicial '\n' finais '\n';
+definicao: listaestados '\n' alfabeto '\n' transicao '\n' inicial '\n' finais '\n' entrada;
 
 listaestados: estados ; 
 
@@ -17,6 +17,11 @@ inicial: estado;
 
 finais: estados;
 
+entrada: ENT;
+
+
 NUM: [0-9]+;
-PAL: [a-z]+;
+PAL: [a-z];
+ENT: [a-z]+;
+
 WS	:	[ \t\r\n]+ -> skip ;

@@ -106,4 +106,14 @@ public interface AutomatoListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFinais(AutomatoParser.FinaisContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link AutomatoParser#entrada}.
+	 * @param ctx the parse tree
+	 */
+	void enterEntrada(AutomatoParser.EntradaContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link AutomatoParser#entrada}.
+	 * @param ctx the parse tree
+	 */
+	void exitEntrada(AutomatoParser.EntradaContext ctx);
 }

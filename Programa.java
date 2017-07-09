@@ -13,15 +13,10 @@ public class Programa  {
 
         AutomatoParser parser = new AutomatoParser(tokens);
         ParseTree tree = parser.definicao(); // iniciamos o parsing pela regra init
-        System.out.println(tree.toStringTree(parser)); // print arvore
+        //System.out.println(tree.toStringTree(parser)); // print arvore
 
         ParseTreeWalker walker = new ParseTreeWalker();
         Mostra mostra = new Mostra();
         walker.walk(mostra, tree);
-        System.out.println(); // insere uma quebra de linha depois da tradução
-
-        System.out.print("Resultado: ");
-
-        mostra.entrada("aaa");
     }
 }
